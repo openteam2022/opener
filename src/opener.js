@@ -1330,6 +1330,12 @@ class loading{
 
 // 模块对象
 const opener = {
+	// 插件描述
+	name: "opener",
+	author: "kaijian",
+	version: "v1.0.0-beta",
+	description: "一个轻量级js弹出框插件",
+	date: "2024-06-22",
 	// 消息组件
 	message: (options={})=>{
 		message.create(options);

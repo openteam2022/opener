@@ -1,0 +1,1346 @@
+:root {
+    /* 网站主色 */
+    --app-color-1: #48C9B0;
+    --app-color-2: #66C7B4;
+    --app-color-3: #A2D9CE22;
+    --app-color-4: #E74900;
+
+    /* --app-color-1: #2F7AFF;
+    --app-color-2: #3399FF;
+    --app-color-3: #2F7AFF1A;
+    --app-color-4: #E74900;*/
+    /**
+     *  -默认状态色
+     * 1 - 4： 颜色从深到浅
+    */
+    --color-primary-1: #337ecc;
+    --color-primary-2: #409eff;
+    --color-primary-3: #ecf5ff;
+    --color-success-1: #529b2e;
+    --color-success-2: #67c23a;
+    --color-success-3: #f0f9eb;
+    --color-warn-1: #b88230;
+    --color-warn-2: #e6a23c;
+    --color-warn-3: #fdf6ec;
+    --color-danger-1: #c45656;
+    --color-danger-2: #f56c6c;
+    --color-danger-3: #fef0f0;
+
+    /**
+   * -默认字体色
+   * 1 - 4： 颜色从深到浅
+  */
+    --color-font-1: #333639;
+    /*    --color-font-2: #6f7174;*/
+    --color-font-2: #666;
+    --color-font-3: #9499A0;
+    --color-font-4: #fff;
+    --color-placeholder: #A8ABB2;
+    --color-disable: #C0C4CC;
+
+    /**
+   * 边框色
+  */
+    --color-border-1: #dcdfe6;
+    --color-border-2: #ebeef5;
+
+    /**
+   * -背景色
+   * -元素背景色
+  */
+    --color-bg-1: #fff;
+    --color-bg-2: #f5f7fa;
+    --color-bg-3: #E6E8EB;
+    --color-bg-4: #CDD0D6;
+
+    /**
+   * 边框阴影色 
+  */
+    --shadow-1: 0px 1px 15px rgba(0, 0, 0, 0.1);
+    --shadow-2: 0px 1px 15px rgba(0, 0, 0, .05);
+    --input-shadow: 0px 1px 15px rgba(64, 158, 255, .1);
+
+    /**
+   * 字体大小
+  */
+    --size-12: 12px;
+    --size-13: 13px;
+    --size-14: 14px;
+    --size-15: 15px;
+    --size-16: 16px;
+    --size-18: 18px;
+    --size-20: 20px;
+    --size-22: 22px;
+    --size-24: 24px;
+    --size-30: 30px;
+    --size-36: 36px;
+    --size-48: 48px;
+    --size-60: 60px;
+
+    /**
+ * 边框弯曲数值
+*/
+    --radius-box: 3px;
+
+    /**
+ * 边距
+*/
+    --space-1: 8px;
+    --space-2: 16px;
+    --space-3: 24px;
+
+    /**
+ * 模块上下的边距
+*/
+    --module-space: 40px;
+    /**
+ * 字体类型
+*/
+    --font-family: "Noto Sans SC", Poppins, "Microsoft YaHei", Arial, Helvetica, sans-serif;
+}
+/*按钮*/
+.open-btn {
+    display: inline-block;
+    position: relative;
+    height: 30px !important;
+    line-height: 28px !important;
+    padding: 0px 13px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: var(--radius-box);
+    box-sizing: border-box;
+    white-space: nowrap;
+    background: none;
+    transition: all 0.5s;
+}
+/***************默认按钮样式******************/
+
+/*  默认样式  */
+.open-btn {
+    border: 1px solid var(--color-border-1);
+    color: var(--color-font-1);
+    margin-right: 8px;
+}
+
+.open-btn:hover {
+    color: var(--color-primary-2);
+    border: 1px solid var(--color-primary-2);
+}
+
+/*  重要样式  */
+.open-btn-primary {
+    border-color: var(--color-primary-2);
+    color: var(--color-primary-2);
+}
+
+.open-btn-primary:hover {
+    background: var(--color-primary-3);
+}
+
+/*  警告样式  */
+.open-btn-warn {
+    border-color: var(--color-warn-2);
+    color: var(--color-warn-2);
+}
+
+.open-btn-warn:hover {
+    border: 1px solid var(--color-warn-2);
+    color: var(--color-warn-2);
+    background: var(--color-warn-3);
+}
+
+/*  危险样式  */
+.open-btn-danger {
+    border-color: var(--color-danger-2);
+    color: var(--color-danger-2);
+}
+
+.open-btn-danger:hover {
+    border: 1px solid var(--color-danger-2);
+    color: var(--color-danger-2);
+    background: var(--color-danger-3);
+}
+
+/*******************重要按钮样式，有背景色*********************/
+
+/*  基础样式  */
+.open-btn[bg] {
+    border-color: var(--color-bg-2);
+    background: var(--color-bg-2);
+}
+
+.open-btn[bg]:hover {
+/*    background: rgba(247, 249, 251, 1.0);*/
+}
+
+/* 重要样式   */
+.open-btn-primary[bg] {
+    color: var(--color-font-4);
+    border-color: var(--color-primary-2);
+    background: var(--color-primary-2);
+}
+
+.open-btn-primary[bg]:hover {
+    border-color:  rgba(121, 187, 255, 1);
+    background: rgba(121, 187, 255, 1);
+}
+
+
+/*警告样式*/
+.open-btn-warn[bg] {
+    color: var(--color-font-4);
+    border-color: var(--color-warn-2);
+    background: var(--color-warn-2);
+}
+
+.open-btn-warn[bg]:hover {
+    border-color:  rgba(237, 190, 118, 1);
+    background: rgba(237, 190, 118, 1);
+}
+
+/*危险样式*/
+.open-btn-danger[bg] {
+    color: var(--color-font-4);
+    border-color: var(--color-danger-2);
+    background: var(--color-danger-2);
+}
+
+.open-btn-danger[bg]:hover {
+    border-color:  rgba(248, 152, 152, 1);
+    background: rgba(248, 152, 152, 1);
+}
+
+/*******************************文字按钮****************************/
+
+/*  基础样式  */
+.open-btn[text] {
+    padding: 0px;
+    border: none !important;
+}
+
+.open-btn[text]:hover {
+    color: var(--color-font-1);
+    opacity: 0.7;
+    background: none !important;
+}
+
+/* 重要样式   */
+.open-btn-primary[text] {
+    color: var(--color-primary-2);
+    border: none !important;
+}
+
+.open-btn-primary[text]:hover {
+    color: var(--color-primary-2);
+    opacity: 0.7;
+    background: none !important;
+}
+
+
+/*警告样式*/
+.open-btn-warn[text] {
+    color: var(--color-warn-2);
+    border: none !important;
+}
+
+.open-btn-warn[text]:hover {
+    color: var(--color-warn-2);
+    opacity: 0.7;
+    background: none !important;
+}
+
+/*危险样式*/
+.open-btn-danger[text] {
+    color: var(--color-danger-2);
+    border: none !important;
+}
+
+.open-btn-danger[text]:hover {
+    color: var(--color-danger-2);
+    opacity: 0.7;
+    background: none !important;
+}
+
+/************************************弹窗组件**************************************/
+
+.open-message {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: center;
+	    justify-content: center;
+	-ms-flex-align: center;
+	    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    font-size: var(--size-15);
+    pointer-events: none;
+}
+.open-message-hide {
+    opacity: 0;
+    animation: messagehide .15s linear;
+}
+.open-message .open-message-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    min-width: 120px;
+    max-width: 360px;
+    margin-top: -8%;
+    padding: 12px 14px;
+    background: var(--color-bg-1);
+    border-radius: 3px;
+    box-sizing: border-box;
+    animation: messageshow .2s linear;
+}
+.open-message .open-message-icon {
+	display: inline-block;
+    position: relative;
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    margin-right: 8px!important;
+    border-radius: 50%;
+}
+.open-message .open-message-title {
+	display: inline-block;
+	-ms-flex: 1;
+	    flex: 1;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/*默认样式*/
+.open-message-default{
+	background: #f4f4f5!important;
+}
+.open-message-default .open-message-title {
+    color: var(--color-font-2);
+}
+.open-message-default .open-message-icon {
+    background: #aaa;
+}
+
+.open-message-default .open-message-icon:after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    z-index: 2;
+    width: 2px;
+    height: 6px;
+    border-radius: 2px;
+    background: #fff;
+}
+
+.open-message-default .open-message-icon:before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: calc(50% - 1px);
+    z-index: 2;
+    width: 2px;
+    height: 2px;
+    border-radius: 2px;
+    background: #fff;
+}
+
+/*成功样式*/
+.open-message-success{
+    background: var(--color-success-3)!important;
+}
+.open-message-success .open-message-icon {
+    background: var(--color-success-2);
+}
+.open-message-success .open-message-icon:after {
+    content: '';
+    position: absolute;
+    top: 46%;
+    left: 5px;
+    z-index: 2;
+    width: 8px;
+    height: 4px;
+    margin-top: -3px;
+    border-left: 1px solid var(--color-bg-2);
+    border-bottom: 1px solid var(--color-bg-2);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.open-message-success .open-message-title{
+	color: var(--color-success-1);
+}
+
+/*警告样式*/
+.open-message-warn{
+    background: var(--color-warn-3)!important;
+}
+.open-message-warn .open-message-icon {
+    background: var(--color-warn-2);
+}
+.open-message-warn .open-message-icon:after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 46%;
+    z-index: 2;
+    width: 2px;
+    height: 6px;
+    border-radius: 2px;
+    background: #fff;
+    -ms-transform: rotate(13deg);
+    transform: rotate(13deg);
+}
+.open-message-warn .open-message-icon:before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: calc(50% - 2px);
+    z-index: 2;
+    width: 2px;
+    height: 2px;
+    border-radius: 2px;
+    background: #fff;
+}
+.open-message-warn .open-message-title{
+	color: var(--color-warn-1);
+}
+
+/*危险样式*/
+.open-message-danger{
+    background: var(--color-danger-3)!important;
+}
+
+.open-message-danger .open-message-icon {
+    background: var(--color-danger-2);
+}
+
+.open-message-danger .open-message-icon::before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 9px;
+    height: 10px;
+    width: 1px;
+    background: #fff;
+    transform: translate(-100%);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.open-message-danger .open-message-icon::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 9px;
+    height: 10px;
+     width: 1px;
+    background: #fff;
+    transform: translate(-100%);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.open-message-danger .open-message-title{
+	color: var(--color-danger-1);
+}
+
+@keyframes messageshow {
+    from {
+        display: block;
+        opacity: 0;
+        transform: scale(.7);
+    }
+
+    to {
+        display: block;
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes messagehide {
+    from {
+        display: block;
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    to {
+        display: block;
+        opacity: 0;
+        transform: scale(.7);
+    }
+}
+
+@media (max-width: 768px) {
+	.open-message .open-message-wrapper{
+		max-width: 90%!important;
+	}
+}
+
+/*消息弹出框*/
+.open-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    animation: modalshow .2s linear;
+}
+.open-modal p{
+    margin: 0;
+}
+.open-modal-hide {
+    opacity: 0;
+    animation: modalhide .15s linear;
+}
+.open-modal-cover {
+    -webkit-backdrop-filter: blur(1px);
+            backdrop-filter: blur(1px);
+    background: rgba(0, 0, 0, .3);
+}
+.open-modal-wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+}
+.open-modal-main {
+    min-width: 360px;
+    max-width: 500px;
+    margin-top: -50px;
+    padding: 20px 18px 18px;
+    background: var(--color-bg-1);
+    border-radius: var(--radius-box);
+    box-shadow: var(--shadow-1);
+    -ms-transform: scale(.7);
+        transform: scale(.7);
+    opacity: 0;
+    transition: all .3s;
+}
+.open-modal-main-show{
+    opacity: 1;
+    -ms-transform: scale(1);
+        transform: scale(1);
+}
+.open-modal-header {
+    display: -ms-flexbox;
+    display: flex;
+    box-sizing: border-box;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.open-modal-header p {
+    font-size: var(--size-16);
+    font-weight: 600;
+    color: var(--color-font-1);
+}
+.open-modal-header span {
+    position: relative;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+}
+.open-modal-content {
+    font-size: var(--size-15);
+    color: var(--color-font-1);
+    line-height: 1.8;
+    margin: 10px 0 !important;
+}
+.open-modal-footer {
+    text-align: right;
+}
+
+.open-modal-footer .open-btn:last-child {
+    margin-right: 0;
+}
+
+.open-modal-header span:after {
+    content: '';
+    position: absolute;
+    left: 7px;
+    width: 1px;
+    height: 14px;
+    background: var(--color-font-3);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transition: all .5s;
+}
+.open-modal-header span:before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    width: 1px;
+    height: 14px;
+    background: var(--color-font-3);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    transition: all .5s;
+}
+
+.open-modal-header span:hover:after,
+.open-modal-header span:hover:before {
+    background: var(--color-font-1);
+}
+
+@keyframes modalshow {
+    from {
+        display: block;
+        opacity: 0;
+    }
+
+    to {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@keyframes modalhide {
+    from {
+        display: block;
+        opacity: 1;
+    }
+
+    to {
+        display: block;
+        opacity: 0;
+    }
+}
+
+@media (max-width: 760px) {
+    .open-modal-main {
+        min-width: 80%;
+        max-width: 80%;
+    }
+}
+
+
+
+/*dialog自定义内容对话框*/
+.open-dialog {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 0px;
+    z-index: 9999;
+    -webkit-backdrop-filter: blur(1px);
+            backdrop-filter: blur(1px);
+    background: rgba(0, 0, 0, 0.3); 
+}
+
+.open-dialog-show {
+    width: 100%;
+    height: 100%;
+    animation: dialogshow 0.3s linear;
+}
+
+.open-dialog-hide {
+    width: 0px;
+    height: 0px;
+    animation: dialoghide 0.2s linear;
+}
+
+.open-dialog-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.open-dialog-main {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    position: relative;
+    min-width: 500px;
+    width: 800px;
+    height: 500px;
+    padding: 20px 0px 18px;
+    background: var(--color-bg-1);
+    border-radius: var(--radius-box);
+    box-sizing: border-box;
+    -ms-transform: scale(.5);
+        transform: scale(.5);
+    opacity: .3;
+    transition: all .3s;
+}
+
+.open-dialog-main-show{
+    opacity: 1;
+    -ms-transform: scale(1);
+        transform: scale(1);
+}
+.open-dialog-main-full{
+    width: 100%!important;
+    height: 100%!important;
+}
+.open-dialog-header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    margin: 0;
+    padding: 0 20px;
+    background: var(--color-bg-1);
+}
+
+.open-dialog-header h3 {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    margin: 0;
+    color: var(--color-font-1);
+}
+.open-dialog-header p{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+        align-items: flex-start;
+    margin: 0;
+}
+.open-dialog-header p span{
+    margin-left: 8px;
+}
+.open-dialog-full{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    border: 1px solid #999;
+    cursor: pointer;
+    transition: all .5s;
+}
+.open-dialog-full:hover{
+    border: 1px solid var(--color-font-1);
+}
+.open-dialog-close {
+    display: inline-block;
+    position: relative;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+}
+
+.open-dialog-close:after {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 7px;
+    width: 1px;
+    height: 17px;
+    background: var(--color-font-3);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transition: all .5s;
+}
+
+.open-dialog-close:before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 7px;
+    width: 1px;
+    height: 17px;
+    background: var(--color-font-3);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    transition: all .5s;
+}
+
+.open-dialog-content {
+    -ms-flex: 1;
+        flex: 1;
+    font-size: 14px;
+    min-height: 150px;
+    margin: 18px 0;
+    padding: 0px 20px;
+    overflow-y: auto;
+    color: var(--color-font-2);
+}
+
+.open-dialog-close:hover:after,
+.open-dialog-close:hover:before {
+    background: var(--color-font-1);
+}
+
+
+
+.open-dialog-footer {
+    padding: 0 20px;
+    text-align: right
+}
+
+.open-dialog-footer button:last-child {
+    margin-right: 0;
+}
+
+@media (max-width: 760px) {
+    .open-dialog-main {
+        min-width: 90%;
+        max-width: 90%;
+    }
+}
+
+
+@keyframes dialogshow {
+    from {
+        opacity: 0.3;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes dialoghide {
+    from {
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+    }
+
+    to {
+         width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+}
+
+
+/*drawer*/
+.open-drawer {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    width: 0;
+    height: 0;
+    -webkit-backdrop-filter: blur(1px);
+            backdrop-filter: blur(1px);
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.open-drawer-show {
+    width: 100%;
+    height: 100%;
+    animation: drawershow 0.3s linear;
+}
+
+.open-drawer-hide {
+    width: 0px;
+    height: 0px;
+    animation: drawerhide 0.2s linear;
+}
+
+.open-drawer-wrapper {
+    position: absolute;
+    padding: 20px 20px 14px;
+    box-sizing: border-box;
+    background: var(--color-bg-1);
+    box-shadow: var(--shadow-1);
+    overflow-y: auto;
+}
+
+.open-drawer-title {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    margin: 0;
+    background: var(--color-bg-1);
+}
+
+.open-drawer-title h3 {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    margin: 0;
+    color: var(--color-font-1);
+}
+
+.open-drawer-close {
+    position: relative;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+}
+
+.open-drawer-close:after {
+    content: '';
+    position: absolute;
+    left: 7px;
+    width: 1px;
+    height: 14px;
+    background: var(--color-font-3);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transition: all .5s;
+}
+
+.open-drawer-close:before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    width: 1px;
+    height: 14px;
+    background: var(--color-font-3);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    transition: all .5s;
+}
+
+.open-drawer-close:hover:after,
+.open-drawer-close:hover:before {
+    background: var(--color-font-1);
+}
+
+.open-drawer-content {
+    margin: 16px 0;
+}
+
+.open-drawer-footer {
+    text-align: right
+}
+
+.open-drawer-footer button {
+    margin-right: 8px;
+}
+
+.open-drawer-footer button:last-child {
+    margin-right: 0px;
+}
+
+/*左侧显现*/
+.open-drawer-left {
+    display: none;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+.open-drawer-left-show {
+    display: block;
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
+    animation: leftshow .3s linear;
+}
+
+.open-drawer-left-hide {
+    animation: lefthide .2s linear;
+}
+
+/*右侧显现*/
+.open-drawer-right {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.open-drawer-right-show {
+    animation: rightshow .3s linear;
+}
+
+.open-drawer-right-hide {
+    animation: righthide .2s linear;
+}
+
+/*顶部显现*/
+.open-drawer-top {
+    top: 0;
+    left: 0;
+    right: 0;
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+.open-drawer-top-show {
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+    animation: topshow .3s linear;
+}
+
+.open-drawer-top-hide {
+    animation: tophide .2s linear;
+}
+
+/*底部显现*/
+.open-drawer-bottom {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+}
+
+.open-drawer-bottom-show {
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    animation: bottomshow .3s linear;
+}
+
+.open-drawer-bottom-hide {
+    animation: bottomhide .2s linear;
+}
+
+@keyframes drawershow {
+    from {
+        opacity: 0.3;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes drawerhide {
+    from {
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+    }
+
+    to {
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+    }
+}
+
+@keyframes leftshow {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes lefthide {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes rightshow {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes righthide {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes topshow {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes tophide {
+    from {
+        transform: translateY(0%);
+    }
+
+    to {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes bottomshow {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes bottomhide {
+    from {
+        transform: translateY(0%);
+    }
+
+    to {
+        transform: translateY(100%);
+    }
+}
+
+/*tip*/
+.open-tip-wrapper {
+    position: absolute;
+    z-index: 99;
+    padding: 5px 11px;
+    border-radius: var(--radius-box);
+    box-shadow: var(--shadow-2);
+    max-width: 200px;
+    animation: opentipshow 0.3s linear;
+}
+.open-tip-wrapper p {
+    line-height: 1.5!important;
+    font-size: 12px !important;
+    white-space: nowrap;
+    margin: 0 !important;
+}
+.open-tip-top-bottom {
+    left: 50%;
+    -ms-transform: translate(-50%);
+        transform: translate(-50%);
+}
+.open-tip-left-right {
+    top: 50%;
+    -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+}
+.open-tip-wrapper-light {
+    background: #303133;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, .1);
+}
+.open-tip-wrapper-light p {
+    color: #ebebeb !important;
+}
+.open-tip-light-top::after {
+    content: '';
+    position: absolute;
+    left: calc(50% - 4px);
+    width: 8px;
+    height: 8px;
+    background: #303133;
+    -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+}
+.open-tip-light-bottom::after {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: calc(50% - 4px);
+    width: 8px;
+    height: 8px;
+    background: #303133;
+    -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+}
+.open-tip-light-left::after {
+    content: '';
+    position: absolute;
+    right: -3px;
+    top: calc(50% - 4px);
+    width: 8px;
+    height: 8px;
+    background: #303133;
+    -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+}
+.open-tip-light-right::after {
+    content: '';
+    position: absolute;
+    left: -3px;
+    top: calc(50% - 4px);
+    width: 8px;
+    height: 8px;
+    background: #303133;
+    -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+}
+.open-tip-wrapper-dark {
+    background: #fff;
+    border: 1px #e5eaf3 solid;
+    box-shadow: 0 1px 10px rgba(200, 200, 200, .1);
+}
+.open-tip-wrapper-dark p {
+    color: #141414 !important;
+}
+.open-tip-dark-top::after {
+    content: '';
+    position: absolute;
+    left: calc(50% - 4px);
+    bottom: -5px;
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    border-right: 1px #e5eaf3 solid;
+    border-bottom: 1px #e5eaf3 solid;
+    -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+}
+.open-tip-dark-bottom::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: calc(50% - 4px);
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    border-top: 1px #e5eaf3 solid;
+    border-left: 1px #e5eaf3 solid;
+    -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+}
+
+.open-tip-dark-left::after {
+    content: '';
+    position: absolute;
+    right: -5px;
+    top: calc(50% - 4px);
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    border-right: 1px #e5eaf3 solid;
+    border-top: 1px #e5eaf3 solid;
+    -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+}
+
+.open-tip-dark-right::after {
+    content: '';
+    position: absolute;
+    left: -5px;
+    top: calc(50% - 4px);
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    border-left: 1px #e5eaf3 solid;
+    border-bottom: 1px #e5eaf3 solid;
+    -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+}
+.open-tip-hide {
+    animation: opentiphide 0.3s linear;
+}
+
+@keyframes opentipshow {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes opentiphide {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+/*loading组件*/
+.open-loading{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0);
+}
+.open-loading-wrapper{
+    background: #fff;
+}
+.open-loading-icon{
+    position: relative;
+}
+.open-loading-icon p{
+  font-size: 4px;
+  margin: 30% auto;
+  text-indent: -9999em;
+  width: 11em;
+  height: 11em;
+  border-radius: 50%;
+  background: linear-gradient(to right, #cccccc 10%, rgba(255, 255, 255, 0) 42%);
+  position: relative;
+  animation: loading 1.1s infinite linear;
+}
+.open-loading-icon p:before,
+.open-loading-icon p:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.open-loading-icon p:before {
+  width: 55%;
+  height: 55%;
+  background: #cccccc;
+  border-radius: 100% 0 0 0;
+}
+.open-loading-icon p:after {
+  background: #fff;
+  width: 85%;
+  height: 85%;
+  border-radius: 50%;
+  margin: auto;
+  bottom: 0;
+  right: 0;
+}
+.open-loading-text{
+    font-size: 14px;
+    color: #555555;
+}
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

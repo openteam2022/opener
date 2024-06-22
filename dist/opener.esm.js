@@ -1,5 +1,4 @@
 /* opener v1.0.0 */
-(function(l, r) { if (!l || l.getElementById('livereloadscript')) return; r = l.createElement('script'); r.async = 1; r.src = '//' + (self.location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1'; r.id = 'livereloadscript'; l.getElementsByTagName('head')[0].appendChild(r) })(self.document);
 function _assertClassBrand(e, t, n) {
   if ("function" == typeof e ? e === t : e.has(t)) return arguments.length < 3 ? t : n;
   throw new TypeError("Private element is not present on this object");
@@ -1277,6 +1276,12 @@ function _createElem5(options) {
   return elem;
 }
 var opener = {
+  // 插件描述
+  name: "opener",
+  author: "kaijian",
+  version: "v1.0.0-beta",
+  description: "一个轻量级js弹出框插件",
+  date: "2024-06-22",
   // 消息组件
   message: function message() {
     var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
